@@ -8,11 +8,15 @@ to work with a serial port in Linux. Additional signals from the serial port are
 
 Running the utility:
 
+```
 ./msp430fr-flasher <reset pin> <test pin> <uart device> <firmware>
+```
 
 Example of use (MCU pin RESET connected to serial DTR pin, MCU pin TEST to RTS):
 
+```
 ./msp430fr-flasher 2 4 /dev/ttyUSB1 firmware/Debug/watermeter-fw.txt
+```
 
 Serial port control line numbering can be found in /usr/include/asm-generic/termios.h
 
